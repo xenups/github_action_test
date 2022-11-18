@@ -17,8 +17,8 @@ jobs:
       with:
         python-version: 3.10.0
     - run: |
-        python --version  # this will output 3.9 now
-        run tests or other things using python ...
+        python --version  
+        # this will output 3.10 now run tests or other things using python ...
     - uses: marian-code/python-lint-annotate@v3
       with:
         python-root-list: "./tests/*.py"
@@ -33,7 +33,7 @@ jobs:
         use-vulture: true
         python-version: "3.10.0"
     - run: |
-        python --version  # this will output 3.7 now !!!
+        python --version  # this will output 3.10 now !!!
   test:
     runs-on: ubuntu-latest
     steps:
