@@ -20,6 +20,7 @@ jobs:
           use-flake8: false
           use-black: false
           use-mypy: false
+          use-docformatter : false
           use-isort: false
           extra-pylint-options: ""
           extra-pycodestyle-options: ""
