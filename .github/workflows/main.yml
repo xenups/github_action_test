@@ -94,7 +94,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install flake8 pytest
+          pip install flake8 pytest pytest-cov
       - run: poetry run pytest . --cov-report term-missing --cov
       - run: poetry run pytest --cov=projects --cov-report=html
 
